@@ -8,7 +8,6 @@ public class MyHandler implements HttpHandler {
 
 	@Override
 	public void handle(HttpExchange t) throws IOException {
-		// TODO Auto-generated method stub
 		byte[]  resp = "Welcome page".getBytes();
 		t.sendResponseHeaders(200, resp.length);
 		OutputStream out = t.getResponseBody();
